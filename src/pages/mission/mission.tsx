@@ -5,21 +5,21 @@ const Container = lazy(() => import("../../common/Container"));
 
 const testimonials = [
   {
-    quote: "Awesome tool!",
+    quote: "KIA",
     text: "Lorem ipsum praesent ac massa at ligula reet est iaculis. Vivamus est mist aliquet elit ac nisl.",
     name: "Olivia Wilson",
     role: "Founder of Borcelle",
     avatar: "olivia.png",
   },
   {
-    quote: "Super cool!",
+    quote: "PMG",
     text: "Lorem ipsum praesent ac massa at ligula reet est iaculis. Vivamus est mist aliquet elit ac nisl.",
     name: "Matt Zhang",
     role: "CEO at Borcelle",
     avatar: "matt.png",
   },
   {
-    quote: "Awesome tool!",
+    quote: "KESPROM",
     text: "Lorem ipsum praesent ac massa at ligula reet est iaculis. Vivamus est mist aliquet elit ac nisl.",
     name: "Hannah Morales",
     role: "CFO at Borcelle",
@@ -56,6 +56,14 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+  }
 `;
 
 const Quote = styled.div`
